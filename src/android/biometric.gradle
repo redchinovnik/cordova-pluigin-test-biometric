@@ -19,6 +19,13 @@ android {
  }
 }
 
+configurations.all {
+        resolutionStrategy {
+            force "com.google.android.gms:play-services-basement:15.0.1"
+            force "com.google.firebase:firebase-iid:16.0.0"
+        }
+      }
+
 dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
